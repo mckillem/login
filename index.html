@@ -4,11 +4,15 @@
     <meta charset="utf-8">
     <title>Login app</title>
     <link rel="stylesheet" href="lib/bootstrap-4.2.1-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="lib/css/signin.css" />
     <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-route.min.js"></script>
     <script src="app.js"></script>
     <script src="logIn/logIn.js"></script>
 </head>
-<body ng-controller="LogInCtrl">
-
+<body>
+<div class="container">
+    <div ng-view></div>
+</div>
 </body>
 </html>

@@ -1,7 +1,7 @@
 'use strict';
 
 loginApp.config(['$routeProvider', function($routeProvider) {
-        $routeProvider.when('/logIn', {
+        $routeProvider.when('/', {
             templateUrl: 'logIn/logIn.html',
             controller: 'LogInCtrl'
         });
