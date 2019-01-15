@@ -1,15 +1,13 @@
 'use strict';
 
-angular.module('todoList.logIn', ['ngRoute'])
-
-    .config(['$routeProvider', function($routeProvider) {
+loginApp.config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/logIn', {
             templateUrl: 'logIn/logIn.html',
             controller: 'LogInCtrl'
         });
-    }])
+    }]);
 
-    .controller('LogInCtrl', ['$scope', '$http', function($scope, $http) {
+loginApp.controller('LogInCtrl', ['$scope', '$http', function($scope, $http) {
         $http.get('logIn.php').then(function (response) {
             $scope.login = response.data;
         })
